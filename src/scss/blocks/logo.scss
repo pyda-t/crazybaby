@@ -1,0 +1,14 @@
+.logo {
+  display: block;
+  width: 161px;
+  height: 26px;
+  background-image: url('../../img/icons/logo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition-duration: $amin-time;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

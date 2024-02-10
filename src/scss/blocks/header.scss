@@ -1,0 +1,73 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: $c-white;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include adaptive-value('height', $header-height-desktop, $header-height);
+  }
+
+  &__left {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 30px;
+    align-items: center;
+  }
+
+  &__button {
+    display: none;
+
+    @include onTablet {
+      display: flex;
+    }
+  }
+
+  &__burger {
+    position: relative;
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color: $c-black;
+    border-radius: 1.5px;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $c-black;
+      border-radius: 1.5px;
+      transition-duration: $amin-time;
+    }
+
+    &::before {
+      transform: translateY(-8px);
+    }
+
+    &::after {
+      transform: translateY(8px);
+    }
+
+  &--active {
+    background-color: $c-white;
+
+    &::before {
+      transform: translateY(0) rotate(45deg);
+    }
+
+    &::after {
+      transform: translateY(0) rotate(-45deg);
+    }
+  }
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+}

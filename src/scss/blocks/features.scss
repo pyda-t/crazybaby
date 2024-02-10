@@ -1,0 +1,118 @@
+$imageHeightMobile: 175px;
+
+.features {
+  max-width: $maxWidthContainer + px;
+
+  @include onTablet {
+    margin-inline: auto;
+    @include adaptive-value('padding-inline', $containerMaxPadding, $containerMinPadding);
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    @include adaptive-value('padding-inline', $containerMaxPadding, $containerMinPadding);
+
+    @include onTablet {
+      padding-inline: 0;
+    }
+
+    @include onDesktop {
+      @include adaptive-value('padding-inline', $containerMaxPadding, $containerMinPadding);
+    }
+  }
+
+  &__content {
+    padding-top: 30px;
+    @include adaptive-value('padding-inline', $containerMaxPadding, $containerMinPadding);
+    padding-bottom: $imageHeightMobile;
+    background-color: $c-blue-light;
+    background-image: url("../../img/features.png");
+    background-repeat: no-repeat;
+    background-size: auto $imageHeightMobile;
+    background-position: center bottom;
+
+    @include onTablet {
+      padding: 30px 90px 123px;
+      background-size: auto 225px;
+      background-position: right bottom;
+    }
+
+    @include onDesktop {
+      @include adaptive-value('margin-inline', $containerMaxPadding, $containerMinPadding);
+      padding-inline: 102px;
+      padding-bottom: 30px;
+      background-size: auto 302px;
+    }
+  }
+
+  &__slider {
+    z-index: 0;
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+    @extend %h3;
+    color: $c-blue-dark;
+  }
+
+  &__list {
+    display: grid;
+    row-gap: 10px;
+    margin-bottom: 50px;
+    list-style: inside;
+
+    @include onDesktop {
+      margin-bottom: 0;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    margin: 0 auto;
+    width: max-content;
+
+    @include onTablet {
+      margin: 0;
+    }
+  }
+
+  &__button {
+    width: 48px;
+    height: 13px;
+    background-image: url("../../img/icons/slider-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition-duration: $amin-time;
+
+    &:hover {
+      background-image: url("../../img/icons/slider-arrow-blue.svg");
+    }
+
+    &--prev {
+      transform: rotate(180deg) translate(-1px, -1px);
+    }
+
+    &--next {
+      transform: translate(-1px, -1px);
+    }
+  }
+
+  &__lists {
+    display: none;
+
+    @include onDesktop {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-auto-flow: column;
+      column-gap: 148px;
+      row-gap: 56px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.nav {
+  &__list {
+    display: grid;
+    @include adaptive-value('row-gap', 50, 30);
+
+    @include onDesktop {
+      grid-auto-flow: column;
+      row-gap: 0;
+      column-gap: 84px;
+      width: max-content;
+    }
+  }
+
+  &__link {
+    @extend %nav-link-text;
+    color: $c-grey-very-dark;
+    transition-duration: $amin-time;
+
+    &:hover {
+      color: $c-black;
+      text-shadow: 0 0 .8px $c-black, 0 0 .8px $c-black;
+    }
+  }
+}

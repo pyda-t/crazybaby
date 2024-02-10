@@ -1,0 +1,55 @@
+.testimonials {
+  &__content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 786px;
+  }
+
+  &__text {
+    position: relative;
+    margin-bottom: 30px;
+    padding-top: 50px;
+    @extend %quote;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      width: 208px;
+      height: 171px;
+      background-image: url("../../img/icons/quotes.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    @include onTablet {
+      margin-bottom: 40px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__avatar {
+    margin-bottom: 20px;
+    @include circle(62px);
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+  }
+
+  &__user-name {
+    margin-bottom: 5px;
+    @extend %h4;
+  }
+
+  &__user-position {
+    @extend %secondary-text;
+    color: $c-grey;
+  }
+}

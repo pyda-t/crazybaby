@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', {
+    "title": "Crazybaby"
+  })
+
+  <body class="page">
+    @@include('html/header.html')
+
+    <main class="page__content">
+      <sidebar class="page__menu menu">
+        <div class="container">
+          <div class="menu__content">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li>
+                  <a href="#story" class="nav__link">
+                    our story
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#about" class="nav__link">
+                    about us
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#features" class="nav__link">
+                    features
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#contact" class="nav__link">
+                    get in touch
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <button class="button menu__button">
+              <a href="/" class="button__text">
+                buy
+              </a>
+            </button>
+          </div>
+        </div>
+      </sidebar>
+
+      <section id="top" class="page__section hero">
+        <div class="hero__image-mobile anim anim--image"></div>
+
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__image-tablet anim anim--image"></div>
+
+            <article class="hero__article anim anim--text">
+              <h1 class="hero__title">
+                Futuristic Wireless Speaker
+              </h1>
+
+              <p>Luna’s performance is balanced and smooth in all frequency ranges which makes the music both naturally pleasant and distinctly more layered.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__nav">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li>
+              <a href="#story" class="nav__link">
+                our story
+              </a>
+            </li>
+
+            <li>
+              <a href="#about" class="nav__link">
+                about us
+              </a>
+            </li>
+
+            <li>
+              <a href="#features" class="nav__link">
+                features
+              </a>
+            </li>
+
+            <li>
+              <a href="#contact" class="nav__link">
+                get in touch
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <section id="story" class="page__section benefits">
+        <div class="container">
+          <ul class="benefits__list">
+            <li class="benefit-card anim anim--text">
+              <div class="benefit-card__icon benefit-card__icon--design"></div>
+
+              <h3 class="benefit-card__title">Futuristic Design</h3>
+
+              <p class="benefit-card__text">
+                To give Luna a truly flawless look, we specifically picked aircraft grade aluminum as its material and adopted both three-dimensional stretch-bending technology and a high precision cold forging technique.
+              </p>
+            </li>
+
+            <li class="benefit-card anim anim--text">
+              <div class="benefit-card__icon benefit-card__icon--sound"></div>
+
+              <h3 class="benefit-card__title">Tweeter Speaker System</h3>
+
+              <p class="benefit-card__text">
+                To deliver a more layered sound performance better than a sole full-range speaker, our team equipped Luna with one more tweeter speaker responsible for high-frequency sound independently.
+              </p>
+            </li>
+
+            <li class="benefit-card anim anim--text">
+              <div class="benefit-card__icon benefit-card__icon--multiroom"></div>
+
+              <h3 class="benefit-card__title">Multiroom System</h3>
+
+              <p class="benefit-card__text">
+                Luna is natively compatible with your home Wi-Fi. Set up multiple speakers in different rooms to expand your music experience into the entire house.
+              </p>
+            </li>
+
+            <li class="benefit-card anim anim--text">
+              <div class="benefit-card__icon benefit-card__icon--light"></div>
+
+              <h3 class="benefit-card__title">Intuitive Lighting System</h3>
+
+              <p class="benefit-card__text">
+                An intuitive user interface allows you to adjust the hue and saturation of color for lighting that fits any mood and situation.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="page__section presentation">
+        <div class="container">
+          <div class="presentation__image anim anim--image"></div>
+        </div>
+      </section>
+
+      <section id="about" class="page__section about-us">
+        <div class="container">
+          <div class="about-us__content">
+            <h2 class="
+              section-title
+              about-us__title
+              about-us__title--mobile
+              anim
+              anim--text
+            ">
+              DESIGNED FOR THE FUTURE
+            </h2>
+
+            <img
+              src="@img/sketch.jpg"
+              alt="Lune eye sketch"
+              class="
+                about-us__image
+                about-us__item-left
+                anim
+                anim--image
+              "
+            >
+
+            <article class="about-us__item-right anim anim--text">
+              <h2 class="
+                section-title
+                about-us__title
+                about-us__title--tablet
+              ">
+                DESIGNED FOR THE FUTURE
+              </h2>
+
+              <p class="about-us__text">
+                In 2014, a group of geeky industrial designers, engineering veterans and acoustic experts formed crazybaby. This is a bunch of passionate people who are crazy enough to think they can challenge the industry with disruptive audio products.
+              </p>
+
+              <button class="about-us__button">
+                See more about us
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section about-us">
+        <div class="container">
+          <div class="about-us__content">
+            <h2 class="
+              section-title
+              about-us__title
+              about-us__title--mobile
+              anim
+              anim--text
+            ">
+              DESIGNED FOR THE FUTURE
+            </h2>
+
+            <img
+              src="@img/luna-eye.jpg"
+              alt="Lune eye"
+              class="
+                about-us__image
+                about-us__item-right
+                anim
+                anim--image
+              "
+            >
+
+            <article class="about-us__item-left anim anim--text">
+              <h2 class="
+                section-title
+                about-us__title
+                about-us__title--tablet
+              ">
+                Luna Eye
+              </h2>
+
+              <p class="about-us__text">
+                Luna Eye is to the essence of this innovative light and audio system. It comprises an independent tweeter speaker, a light guiding component, a dome and a ring ornament.
+              </p>
+
+              <button class="about-us__button">
+                See more about us
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section testimonials">
+        <div class="container">
+          <div class="testimonials__content">
+            <p class="testimonials__text anim anim--text">
+              It really took me by surprise honestly to have such full beautiful sound that coming out of this small compact device. And with the brush aluminum surface, it feels so familiar. Like my iPhone.
+            </p>
+
+            <img src="@img/avatar.jpg" alt="Garrett Martin" class="testimonials__avatar anim anim--image">
+
+            <h4 class="testimonials__user-name anim anim--text">
+              Garrett Martin
+            </h4>
+
+            <p class="testimonials__user-position anim anim--text">
+              Creative Director
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="page__section features">
+        <h2 class="section-title features__title anim anim--text">
+          FEATURES
+        </h2>
+
+        <div class="features__content anim anim--image">
+          <div class="swiper features__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <h3 class="features__subtitle">
+                  Connectivity
+                </h3>
+
+                <ul class="features__list">
+                  <li>Hands Free Wireless Audio</li>
+                  <li>Bluetooth 4.0 LE</li>
+                  <li>Wi-Fi 2.4 GHz (802.11 b/g/n)</li>
+                  <li>Smart Multiroom System Set Up</li>
+                  <li>Party Mode with 6.0 Units and above</li>
+                  <li>MESHNET Multi Speaker Network</li>
+                </ul>
+              </div>
+
+              <div class="swiper-slide">
+                <h3 class="features__subtitle">
+                  Sound & Music
+                </h3>
+
+                <ul class="features__list">
+                  <li>Feel-in-chest Base Power</li>
+                  <li>Lossless Digital Audio Transmission</li>
+                  <li>Easy & Stable Stereo Pairing</li>
+                  <li>Crisp and Clear High Frequency Sound</li>
+                  <li>Streams from Cloud Music and Local Library</li>
+                  <li>Auto Music from Last Song Stopped</li>
+                </ul>
+              </div>
+
+              <div class="swiper-slide">
+                <h3 class="features__subtitle">
+                  App Features
+                </h3>
+
+                <ul class="features__list">
+                  <li>Customize Music Schedule</li>
+                  <li>Wake Up with Favorite Songs</li>
+                  <li>Home Detection Auto Wake Up</li>
+                  <li>Color Wheel</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="features__buttons">
+              <div class="features__button features__button--prev"></div>
+              <div class="features__button features__button--next"></div>
+            </div>
+          </div>
+
+          <div class="features__lists">
+            <div>
+              <h3 class="features__subtitle">
+                Connectivity
+              </h3>
+
+              <ul class="features__list">
+                <li>Hands Free Wireless Audio</li>
+                <li>Bluetooth 4.0 LE</li>
+                <li>Wi-Fi 2.4 GHz (802.11 b/g/n)</li>
+                <li>Smart Multiroom System Set Up</li>
+                <li>Party Mode with 6.0 Units and above</li>
+                <li>MESHNET Multi Speaker Network</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="features__subtitle">
+                Sound & Music
+              </h3>
+
+              <ul class="features__list">
+                <li>Feel-in-chest Base Power</li>
+                <li>Lossless Digital Audio Transmission</li>
+                <li>Easy & Stable Stereo Pairing</li>
+                <li>Crisp and Clear High Frequency Sound</li>
+                <li>Streams from Cloud Music and Local Library</li>
+                <li>Auto Music from Last Song Stopped</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="features__subtitle">
+                App Features
+              </h3>
+
+              <ul class="features__list">
+                <li>Customize Music Schedule</li>
+                <li>Wake Up with Favorite Songs</li>
+                <li>Home Detection Auto Wake Up</li>
+                <li>Color Wheel</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="page__section questions anim anim--text">
+        <div class="container">
+          <div class="questions__content">
+            <h2 class="section-title questions__title">
+              DO YOU HAVE ANY QUESTIONS?
+            </h2>
+
+            <form class="questions__form" novalidate>
+              <div class="questions__inputs">
+                <input
+                  name="email"
+                  type="email"
+                  class="questions__input"
+                  placeholder="Your email"
+                >
+
+                <textarea
+                  name="massage"
+                  class="questions__input"
+                  rows="5"
+                  placeholder="Your message..."
+                ></textarea>
+              </div>
+
+              <button class="button button--blue" type="submit">
+                <span class="button__text">
+                  SEND
+                </span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('html/footer.html')
+  </body>
+</html>

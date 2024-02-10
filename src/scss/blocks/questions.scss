@@ -1,0 +1,66 @@
+.questions {
+  &__content {
+    @include pageGrid;
+  }
+
+  &__title {
+    margin-bottom: 27px;
+
+    @include onTablet {
+      grid-column: 1 / span 4;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / span 6;
+    }
+  }
+
+  &__form {
+    @include onTablet {
+      grid-column: 5 / span 4;
+    }
+
+    @include onDesktop {
+      grid-column: 7 / span 6;
+    }
+  }
+
+  &__inputs {
+    display: grid;
+    row-gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__input {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+
+    padding: 12px 20px;
+    border: 1px solid $c-grey-very-light;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 24px;
+    resize: none;
+    transition-duration: $amin-time;
+
+    &::placeholder {
+      @extend %main-text;
+      color: $c-grey-light;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $c-grey-very-dark;
+    }
+
+    &--success {
+      color: $c-blue;
+      border-color: $c-blue;
+    }
+
+    &--error {
+      color: $c-red;
+      border-color: $c-red;
+    }
+  }
+}

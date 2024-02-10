@@ -1,0 +1,31 @@
+.button {
+  width: 100%;
+  transition-duration: $amin-time;
+  background-color: $c-grey-very-dark;
+
+  @include onTablet {
+    width: max-content;
+  }
+
+  &:hover {
+    background-color: $c-black;
+  }
+
+  &--blue {
+    width: max-content;
+    background-color: $c-blue;
+
+    &:hover {
+      background-color: $c-blue-dark;
+    }
+  }
+
+  &__text {
+    display: block;
+    padding: 16px 35px;
+    align-items: center;
+    justify-content: center;
+    @extend %button-text;
+    color: $c-white;
+  }
+}

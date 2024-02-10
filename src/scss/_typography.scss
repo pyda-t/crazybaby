@@ -1,0 +1,78 @@
+%main-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+%h1 {
+  @include adaptive-value('font-size', 62, 40);
+  font-weight: 700;
+  @include adaptive-value('line-height', 78, 52);
+  text-transform: uppercase;
+  }
+
+%h2 {
+  @include adaptive-value('font-size', 56, 30);
+  font-weight: 700;
+  @include adaptive-value('line-height', 70, 40);
+  text-transform: uppercase;
+}
+
+%h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+%h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+%nav-link-text {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @include onTablet {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  @include onDesktop {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+%secondary-text {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+%tertiary-text {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+%button-text {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+%quote {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+
+  @include onTablet {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}

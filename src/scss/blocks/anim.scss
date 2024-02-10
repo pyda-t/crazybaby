@@ -1,0 +1,11 @@
+.anim {
+  opacity: 0;
+
+  &--image {
+    transform: scale(0.5);
+  }
+
+  &--text {
+    transform: translateY(100px);
+  }
+}

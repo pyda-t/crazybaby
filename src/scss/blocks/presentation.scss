@@ -1,0 +1,21 @@
+.presentation {
+  &__image {
+    margin: 0 auto;
+    aspect-ratio: 296 / 195;
+    max-width: 846px;
+    background-image: url("../../img/luna-mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    @include onTablet {
+      aspect-ratio: 700 / 430;
+      background-image: url("../../img/luna-tablet.png");
+    }
+
+    @include onTablet {
+      aspect-ratio: 846 / 520;
+      background-image: url("../../img/luna-desktop.png");
+    }
+  }
+}
